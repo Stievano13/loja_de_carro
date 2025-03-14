@@ -1,24 +1,32 @@
 .App {
   width: 100vw;
   height: 100vh;
-  background-image: linear-gradient(90deg, #a192f3 35%, #2a07ee 90%);
+  background-image: linear-gradient(90deg, #000000 35%, #ffffff 100%);
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: ARIAL Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, sans-serif;
 }
 
 .App-header {
-  background-color: #fff;
+  background-color: #ffffff;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(18, 12, 139, 0.458);
+  width: 100%;
 }
 
 .logo {
-  width: 150px;
+  width: 250px;
   height: auto;
+  margin-bottom: 20px;
+}
+
+.nav-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .nav-links {
@@ -30,12 +38,18 @@
 
 .nav-links li {
   margin-right: 20px;
+  color: rgb(159, 162, 165);
 }
 
 .nav-links a {
   text-decoration: none;
   color: #000;
   font-size: 16px;
+}
+
+.nav-links a:hover {
+  color: #0000ff;
+  text-decoration: underline;
 }
 
 .user-icon, .shopping-bag-icon {
@@ -57,4 +71,14 @@
 .icone {
   font-size: 24px;
   margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .nav-links li {
+    margin-right: 10px;
+  }
+
+  .user-icon, .shopping-bag-icon {
+    font-size: 18px;
+  }
 }
